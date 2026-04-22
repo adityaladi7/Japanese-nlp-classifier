@@ -1,0 +1,97 @@
+{
+  "taxonomy_version": "1.0",
+  "description": "Harm taxonomy for Japanese-language content classification",
+  "categories": {
+    "abusive_content": {
+      "label_id": 0,
+      "description": "Content that directly attacks, threatens, or demeans a person or group",
+      "severity_default": "HIGH",
+      "subcategories": [
+        {
+          "id": "direct_harassment",
+          "name": "Direct Harassment",
+          "description": "Personal attacks targeting an individual",
+          "examples_ja": ["死ね", "消えろ", "クズ野郎"],
+          "escalate": true
+        },
+        {
+          "id": "hate_speech",
+          "name": "Hate Speech",
+          "description": "Content targeting groups based on identity",
+          "examples_ja": ["差別的発言", "民族攻撃"],
+          "escalate": true
+        },
+        {
+          "id": "threats",
+          "name": "Threats",
+          "description": "Explicit or implied threats of harm",
+          "examples_ja": ["殺すぞ", "覚えておけ"],
+          "escalate": true
+        },
+        {
+          "id": "severe_insults",
+          "name": "Severe Insults",
+          "description": "Highly offensive language targeting individuals",
+          "examples_ja": ["バカ", "アホ", "キモい"],
+          "escalate": false
+        }
+      ]
+    },
+    "negative_sentiment": {
+      "label_id": 1,
+      "description": "Content expressing strong negative emotion or dissatisfaction, without direct abuse",
+      "severity_default": "MEDIUM",
+      "subcategories": [
+        {
+          "id": "product_complaint",
+          "name": "Product / Service Complaint",
+          "description": "Negative review or complaint about a product or service",
+          "examples_ja": ["最悪のサービス", "二度と使わない"],
+          "escalate": false
+        },
+        {
+          "id": "frustration",
+          "name": "General Frustration",
+          "description": "Expressions of frustration not directed at a person",
+          "examples_ja": ["うざい", "最悪", "ありえない"],
+          "escalate": false
+        },
+        {
+          "id": "sarcasm",
+          "name": "Sarcasm / Irony",
+          "description": "Sarcastic or ironic negative sentiment",
+          "examples_ja": ["すごいですね（皮肉）"],
+          "escalate": false
+        }
+      ]
+    },
+    "quality_risk": {
+      "label_id": 2,
+      "description": "Content that poses a quality or policy risk without being overtly abusive",
+      "severity_default": "LOW",
+      "subcategories": [
+        {
+          "id": "misinformation",
+          "name": "Potential Misinformation",
+          "description": "Content that may contain false or misleading information",
+          "examples_ja": ["フェイクニュース", "デマ"],
+          "escalate": false
+        },
+        {
+          "id": "spam",
+          "name": "Spam / Promotional Abuse",
+          "description": "Unsolicited promotional or repetitive content",
+          "examples_ja": ["広告スパム", "同じ内容の繰り返し"],
+          "escalate": false
+        },
+        {
+          "id": "off_topic",
+          "name": "Off-Topic Content",
+          "description": "Content irrelevant to the platform context",
+          "examples_ja": ["関係ない話"],
+          "escalate": false
+        }
+      ]
+    }
+  }
+}

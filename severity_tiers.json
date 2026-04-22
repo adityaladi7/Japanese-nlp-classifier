@@ -1,0 +1,58 @@
+{
+  "severity_tiers": {
+    "CRITICAL": {
+      "description": "Immediate escalation required. Abusive content with adversarial evasion signals detected.",
+      "conditions": {
+        "predicted_class": "abusive_content",
+        "adversarial_risk_score_min": 0.4,
+        "confidence_min": 0.7
+      },
+      "action": "Immediate human review + auto-flag for removal",
+      "sla_minutes": 15
+    },
+    "HIGH": {
+      "description": "Abusive content detected with high model confidence.",
+      "conditions": {
+        "predicted_class": "abusive_content",
+        "adversarial_risk_score_min": 0.0,
+        "confidence_min": 0.75
+      },
+      "action": "Human review within SLA",
+      "sla_minutes": 60
+    },
+    "MEDIUM": {
+      "description": "Negative sentiment content or lower-confidence abuse detection.",
+      "conditions": [
+        {
+          "predicted_class": "negative_sentiment",
+          "confidence_min": 0.7
+        },
+        {
+          "predicted_class": "abusive_content",
+          "confidence_max": 0.75
+        }
+      ],
+      "action": "Queue for batch human review",
+      "sla_minutes": 240
+    },
+    "LOW": {
+      "description": "Quality risk content. No immediate escalation required.",
+      "conditions": {
+        "predicted_class": "quality_risk"
+      },
+      "action": "Automated handling or scheduled review",
+      "sla_minutes": 1440
+    }
+  },
+  "escalation_rules": {
+    "auto_escalate_to_critical": [
+      "had_homoglyphs AND predicted_class == abusive_content",
+      "adversarial_risk_score > 0.6",
+      "abuse_patterns_found AND confidence > 0.8"
+    ],
+    "auto_approve": [
+      "predicted_class == quality_risk AND confidence > 0.9 AND adversarial_risk_score < 0.1"
+    ]
+  },
+  "review_queue_priority": ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+}

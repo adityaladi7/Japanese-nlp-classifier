@@ -1,0 +1,26 @@
+# Core ML & Data
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# NLP
+nltk>=3.8.0
+spacy>=3.6.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Japanese tokenization (optional — pipeline falls back gracefully if unavailable)
+# MeCab installation is OS-level; this installs the Python binding
+# macOS:   brew install mecab mecab-ipadic
+# Ubuntu:  sudo apt-get install mecab libmecab-dev mecab-ipadic-utf8
+mecab-python3>=1.0.6; sys_platform != "win32"
+
+# Distributed compute (optional — only needed for Spark/Hadoop mode)
+# pyspark>=3.4.0
+
+# Utilities
+tqdm>=4.65.0
+python-dotenv>=1.0.0

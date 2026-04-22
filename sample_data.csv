@@ -1,0 +1,61 @@
+id,text,label
+1,このアプリは最悪です。絶対に使わないでください。,negative_sentiment
+2,死ね！消えろ！,abusive_content
+3,普通のレビューです。特に問題はありませんでした。,quality_risk
+4,サービスが遅すぎて話になりません。,negative_sentiment
+5,バカ野郎！うざい！,abusive_content
+6,良い商品です。また購入します。,quality_risk
+7,クズサービス。最低。返金してください。,negative_sentiment
+8,殺すぞ。覚えておけ。,abusive_content
+9,少し使いにくいですが、慣れれば問題ありません。,quality_risk
+10,本当にひどい経験でした。二度と使いません。,negative_sentiment
+11,差別的な発言は許せません。,abusive_content
+12,配送が遅かったです。改善してほしいです。,quality_risk
+13,最低のカスタマーサービスでした。,negative_sentiment
+14,気持ち悪い。キモい。近づくな。,abusive_content
+15,機能が少ないですが、基本的には使えます。,quality_risk
+16,ありえない対応でした。怒り心頭です。,negative_sentiment
+17,ｋｉｌｌ ｙｏｕ full-width evasion test,abusive_content
+18,商品説明と実物が異なりました。,quality_risk
+19,もう二度とここでは買いません。最悪！,negative_sentiment
+20,ゴミ。役立たず。恥を知れ。,abusive_content
+21,UIが少し古い感じがしますが、機能は十分です。,quality_risk
+22,対応が雑で不満です。,negative_sentiment
+23,a.b.u.s.e symbol insertion test 死ね,abusive_content
+24,マニュアルが分かりにくいです。,quality_risk
+25,期待外れでした。お金の無駄でした。,negative_sentiment
+26,うざい！邪魔！消えろ！,abusive_content
+27,もう少し価格が安ければ良かったです。,quality_risk
+28,品質が以前と比べて落ちた気がします。,negative_sentiment
+29,死ねえええええ elongation test,abusive_content
+30,この製品は私のニーズに合っていませんでした。,quality_risk
+31,サポートの返答が遅すぎます。,negative_sentiment
+32,クズ野郎！バカ！アホ！,abusive_content
+33,説明書がわかりにくいです。改善をお願いします。,quality_risk
+34,全然使えない。詐欺みたいなもの。,negative_sentiment
+35,аbuse with Cyrillic homoglyph 差別,abusive_content
+36,互換性の問題がありました。,quality_risk
+37,こんなひどい商品は初めてです。,negative_sentiment
+38,消えろ。邪魔だ。この世にいらない。,abusive_content
+39,同じ内容のスパムメールが届いています。,quality_risk
+40,スタッフの態度が非常に悪かったです。,negative_sentiment
+41,おまえなんか死んでしまえ！,abusive_content
+42,関係のない広告が多すぎます。,quality_risk
+43,返品対応が非常に面倒でした。,negative_sentiment
+44,ゴミみたいなやつ。役に立たない。,abusive_content
+45,機能のバグが多く、業務に支障が出ています。,quality_risk
+46,品質管理がずさんです。,negative_sentiment
+47,This is こんにちは mixed code-switching abuse 死ね,abusive_content
+48,デザインが古臭いです。,quality_risk
+49,購入後のサポートが全くありません。,negative_sentiment
+50,最低な人間だ。消えてしまえ。,abusive_content
+51,もう少し操作が直感的であれば良かったです。,quality_risk
+52,納期が守られませんでした。,negative_sentiment
+53,うざいし、キモいし、近寄るな！,abusive_content
+54,フェイクニュースを広めないでください。,quality_risk
+55,期待していたほどではありませんでした。,negative_sentiment
+56,お前のような奴は社会に必要ない。,abusive_content
+57,同じ質問に何度も答えさせられました。,quality_risk
+58,もっと安くなれば利用したいです。,negative_sentiment
+59,殺す。絶対許さない。,abusive_content
+60,検索機能が使いにくいです。改善を希望します。,quality_risk

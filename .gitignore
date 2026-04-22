@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Models (large binary files — don't commit to git)
+models/*.pkl
+models/*.bin
+models/spark_model/
+
+# Results (generated — regenerate locally)
+results/confusion_matrix.png
+results/error_analysis.csv
+results/predictions.json
+
+# Data (keep sample, ignore full dataset)
+data/train.csv
+data/test.csv
+data/full_*.csv
+!data/sample_data.csv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
